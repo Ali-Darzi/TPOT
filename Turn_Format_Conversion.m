@@ -16,7 +16,7 @@ Frame_Rate=29.97;
 %% Dropping the problematic Pairs
 Drop_Pair=[102620];%108668;109885;100065;104988;106896;108418;110537;110606];
 Drop_Pair=[Drop_Pair;100404;100665;100819;101046;101980;102872;103656;104480;104710;104909]; 
-Drop_Pair=[Drop_Pair;105031;108988;109524;110167;110568];  % ;100709 - Among all pairs, 100709 doe snot have info for the child
+Drop_Pair=[Drop_Pair;105031;108988;109524;110167;110568;100709];  % ;100709 - Among all pairs, 100709 doe snot have info for the child
 for i=1:size(Drop_Pair,1)
     Idx=find(Test_Info(:,1)==Drop_Pair(i));
     Test_Info(Idx,:)=[];
